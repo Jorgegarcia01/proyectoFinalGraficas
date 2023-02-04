@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class movement : MonoBehaviour
 {
-    private float velocidad = 2;
+    private float velocidad = 4;
     private Rigidbody rigid;
     public float velRotacion;
 
@@ -21,7 +21,6 @@ public class movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            Debug.Log("Space key was pressed.");
             gameObject.transform.Translate(Vector3.forward * velocidad * Time.deltaTime);
 
         }
